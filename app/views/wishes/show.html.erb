@@ -1,0 +1,16 @@
+<h1>You're awesome!</h1>
+<h3>
+    Thank you for taking the time to send a special message to Rye for their birthday.
+    Below is the text they'll receive May 17th.
+</h3>
+
+<p>
+  <i>"<%= @wish.text %>"</i>
+</p>
+
+<div>
+    <%= link_to 'Edit', edit_wish_path(@wish) %>
+</div>
+<div>
+    <%= link_to 'home', root_path %>
+</div>

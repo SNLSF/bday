@@ -1,0 +1,26 @@
+<h1>All the birthday wishes:</h1>
+<ul>
+    <% @wishes.each do |wish| %>
+    <li>
+        <h2>
+            <%= wish.title %>
+        </h2>
+        <p>
+            <%= wish.text %>
+        </p>
+        <p>
+            <%= link_to 'Show', wish_path(wish) %>
+        </p>
+        <p>
+            <%= link_to 'Edit', edit_wish_path(wish) %>
+        </p>
+        <p>
+            <%= link_to 'Destroy', wish_path(wish),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+        </p>
+    </li>
+    <% end %>
+</ul>
+
+<%= link_to 'home', root_path %>
