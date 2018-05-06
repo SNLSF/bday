@@ -1,24 +1,19 @@
-# README
+# Secret wishes 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Functionality:
 
-Things you may want to cover:
+Home page: user reads overview on how the app works. Call to action to create a "birthday wish"
 
-* Ruby version
+Create a wish page: user submits a message
 
-* System dependencies
+Show page: confirms message content and gives option to edit/delete message
 
-* Configuration
+Can return to home page
 
-* Database creation
+Users do not have access to the index page for all wishes created. Admin does: user name is "steph", password "boss"
 
-* Database initialization
+What happens next:
 
-* How to run the test suite
+* database of messages are converted into Twilio sms messages 
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* sms messages are scheduled to send to the birthday person starting May 16th at 4pm through the end of day May 17
